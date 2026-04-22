@@ -23,7 +23,24 @@
     }
     cxt.stroke();
 </script></body></html>
-  
+
+<style>
+.spiral {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 20px; height: 20px;
+  background: blue;
+  border-radius: 50%;
+  animation: spiral 4s infinite linear;
+}
+
+@keyframes spiral {
+  0% { transform: translate(-50%, -50%) rotate(0deg) translate(0px) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg) translate(200px) rotate(-360deg); }
+}
+</style>
+<div class="spiral"></div>
+
 <style>
   body {
   margin: 0;
